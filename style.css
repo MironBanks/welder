@@ -352,8 +352,27 @@ button {
 /*--------------- newsletter section starts  --------------- */
 
 .newsletter {
-	padding: 140px 0;
-	background: #161616;
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	background: url(welding_2.jpg) center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.newsletter::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: #1b1b1b;
+	opacity: 0.4;
+}
+
+.col {
+	z-index: 2;
 }
 
 .newsletter input {
@@ -397,6 +416,30 @@ button {
 	font-weight: 600;
 	text-transform: uppercase;
 	font-family: Poppins !important;
+}
+
+.header_two {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.header_two h1 {
+	color: #d3ae87;
+	font-size: 80px !important;
+}
+
+@media (max-width: 900px) {
+	.header_two {
+		left: 50%;
+	}
+
+	.header_two h1 {
+		font-size: 34px !important;
+		text-align: center;
+	}
 }
 
 /*--------------- contact section starts here --------------- */
