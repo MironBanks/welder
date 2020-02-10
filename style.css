@@ -341,6 +341,14 @@ button {
 	background-size: cover;
 }
 
+.read-more-one {
+	display: none;
+}
+
+.read-more-two {
+	display: none;
+}
+
 /*--------------- newsletter section starts  --------------- */
 
 .newsletter {
